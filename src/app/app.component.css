@@ -1,0 +1,19 @@
+.background {
+  height: 100vh;
+  background-image: url("/assets/img/search2.jpg");
+  background-position: center;
+  opacity: 0.9;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: -1;
+}
+.btn-floating {
+  margin: 14px;
+  padding-left: 0%;
+  padding-right: 0%;
+}
+.middle {
+  position: relative;
+  top: 25%;
+}
