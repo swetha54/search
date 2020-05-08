@@ -11,6 +11,7 @@ export class DisplaycardsComponent implements OnInit {
   constructor(private s: SearchService) {
     this.sreslt = this.s.imageresults;
     console.log(this.sreslt);
+    this.s.imageresults = [];
   }
 
   ngOnInit() {}
