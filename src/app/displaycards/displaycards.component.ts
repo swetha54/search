@@ -5,7 +5,7 @@ import { SearchService } from "../search.service";
   templateUrl: "./displaycards.component.html",
   styleUrls: [ "./displaycards.component.css" ]
 })
-export class DisplaycardsComponent implements OnInit, OnDestroy {
+export class DisplaycardsComponent implements OnInit {
   sreslt = [];
 
   constructor(private s: SearchService) {
@@ -14,8 +14,4 @@ export class DisplaycardsComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {}
-
-  ngOnDestroy() {
-    this.sreslt = [];
-  }
 }
