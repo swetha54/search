@@ -9,7 +9,8 @@ import { DisplaycardsComponent } from "./displaycards/displaycards.component";
 import { Routes, RouterModule } from "@angular/router";
 import { HomeComponent } from "./home/home.component";
 const routes: Routes = [
-  { path: "", component: HomeComponent, pathMatch: "full" },
+  { path: "main", component: HomeComponent },
+  { path: "", redirectTo: "main", pathMatch: "full" },
   { path: "display", component: DisplaycardsComponent }
 ];
 @NgModule({
