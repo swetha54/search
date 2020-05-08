@@ -16,6 +16,6 @@ export class DisplaycardsComponent implements OnInit, OnDestroy {
   ngOnInit() {}
 
   ngOnDestroy() {
-    this.sreslt = [];
+    this.s.imageresults = [];
   }
 }
