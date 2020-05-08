@@ -6,7 +6,6 @@ import { ActivatedRoute } from "@angular/router";
   providedIn: "root"
 })
 export class SearchService {
-  imageresults: any[] = [];
   constructor(
     private http: HttpClient,
     private route: ActivatedRoute,
@@ -23,8 +22,9 @@ export class SearchService {
         }
       })
       .subscribe(x => {
+        var imageresults = [];
         x["hits"].forEach(element => {
-          this.imageresults.push(element);
+          imageresults.push(element);
         });
       });
     // console.log("inside service" + input);
