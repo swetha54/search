@@ -31,9 +31,6 @@ export class SearchService {
     //console.log(this.imageresults);
     this.router.navigate([ "/display" ]);
   }
-  ngOnDestroy() {
-    this.imageresults = [];
-  }
 }
 
 // https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Nelson%20Mandela&utf8=&format=json
