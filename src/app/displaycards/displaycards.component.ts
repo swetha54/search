@@ -6,12 +6,10 @@ import { SearchService } from "../search.service";
   styleUrls: [ "./displaycards.component.css" ]
 })
 export class DisplaycardsComponent implements OnInit {
-  sreslt = [];
-
-  constructor(private s: SearchService) {
-    this.sreslt = this.s.imageresults;
-    console.log(this.sreslt);
-  }
-
   ngOnInit() {}
+  constructor(private s: SearchService) {
+    var sreslt = [];
+    sreslt = this.s.imageresults;
+    console.log(sreslt);
+  }
 }
