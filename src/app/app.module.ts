@@ -8,6 +8,7 @@ import { FormsModule } from "@angular/forms";
 import { DisplaycardsComponent } from "./displaycards/displaycards.component";
 import { Routes, RouterModule } from "@angular/router";
 import { HomeComponent } from "./home/home.component";
+import { ImageService } from "./image.service";
 const routes: Routes = [
   { path: "main", component: HomeComponent },
   { path: "", redirectTo: "main", pathMatch: "full" },
@@ -22,7 +23,7 @@ const routes: Routes = [
     FormsModule,
     RouterModule.forRoot(routes)
   ],
-  providers: [ SearchService ],
+  providers: [ SearchService, ImageService ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule {}
